@@ -29,8 +29,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    {
+      resolve: "gatsby-plugin-snipcartv3",
+      options: {
+        apiKey:
+          "NDBiMWE1Y2ItM2YyNC00NzBmLWI2ZWItZGUzODZjNDcwZTYyNjM3NTA3MTI4ODg4MjcxMDM0",
+      },
+    }, // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    "gatsby-plugin-typescript",
   ],
 }
