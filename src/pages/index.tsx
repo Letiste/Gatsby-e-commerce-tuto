@@ -21,7 +21,17 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Home</h1>
+      <h1>Snipcart Store</h1>
+      <p>
+        <a
+          href="#"
+          className="snipcart-checkout snipcart-summaray"
+          style={{ textDecoration: "none" }}
+        >
+          <strong>Cart:</strong>{" "}
+          <span className="snipcart-total-price">$0.00</span>
+        </a>
+      </p>
       {products.map(product => {
         const imageIndex = imagesName.indexOf(product.image)
         const image = images[imageIndex]
